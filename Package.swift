@@ -8,11 +8,12 @@ let package = Package(
         .iOS(.v14),
     ],
     products: [
-	.library(name: "GBVersionTracking", targets: ["GBVersionTracking"])
+	.library(name: "GBVersionTracking",
+             targets: ["GBVersionTracking"])
     ],
     targets: [
         .target(name: "GBVersionTracking",
-                path: "Sources/MGSwipeTableCell",
+                path: "Sources/GBVersionTracking",
                 publicHeadersPath: "include",
                 cSettings: [
                   .headerSearchPath("include"),
